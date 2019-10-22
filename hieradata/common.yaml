@@ -1,0 +1,6 @@
+---
+users:
+  joe:
+    home: '/home/joe'
+  jenkins:
+    home: '/home/jenkins'
