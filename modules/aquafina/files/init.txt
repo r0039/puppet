@@ -1,0 +1,4 @@
+While it's useful to be able to set the contents of a fle to a short text string, most fles we're
+likely to want to manage will be too large to include directly in our Puppet manifests. Ideally,
+we would put a copy of the fle in the Puppet repo, and have Puppet simply copy it to the
+desired place in the flesystem. The source atribute does exactly that (file_source.pp):

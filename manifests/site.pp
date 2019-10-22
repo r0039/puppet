@@ -66,4 +66,9 @@ node 'puppet-agent-02.office' {
   include cowsay
   include htop
   include mariadb
+
+file { '/tmp/puppet':
+  ensure	=> file,
+  source	=> 'puppet:///modules/aquafina/init.txt'
+}
 }
